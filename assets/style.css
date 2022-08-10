@@ -19,6 +19,11 @@ header {
     height: 100px;
 }
 
+.banner-header {
+    height: 35vh;
+    background-color: greenyellow;
+}
+
 
 /* -----------  MAIN // CONTAINER  ----------- */
 
