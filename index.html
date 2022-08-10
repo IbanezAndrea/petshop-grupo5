@@ -17,37 +17,38 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-                <div class="container gap-2 justify-content-center">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Productos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Remedios</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                            </li>
+            <div  class="col-lg-6 col-xl-8">
+                <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
+            </div>              
+            <div class="container-fluid d-flex justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-lg-6 col-xl-4 collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Remedios</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
                         </ul>
-                    </div>
-                    <form class="d-flex" role="search">
-                        <input style="width: 250px;" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">C</button>
-                    </form>
-                </div>
-        </nav>
+                    </li>                  
+                    <li class="nav-item">
+                        <a class="nav-link last-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="btn shop-btn position-absolute end-0 mb-2" type="submit"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></button>
+    
+    </nav>
+       
         <div class="banner-header container-fluid">
         </div>
     </header>

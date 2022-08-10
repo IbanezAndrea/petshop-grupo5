@@ -10,6 +10,7 @@
 
 /* -----------   HEADER   ----------- */
 
+            /* Navbar */
 header {
     background-color: #F9F2ED;
     min-height: 10vh;
@@ -18,7 +19,54 @@ header {
 #logo {
     height: 100px;
 }
+.shop-img{
+    height: 1.8rem;
+    width: auto;
+}
+.shop-img:hover{
+    animation: click 0.5s 1;
+}
+@keyframes click{
+  25%,75%{
+    transform: scale(0.8)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+}
+.shop-btn{
+    margin-right: 2rem;
+    border: 1px solid #2f29186a;
+}
+.navbar-nav{
+    margin-left: 10rem;
+}
 
+@media (max-width: 768px){
+    .navbar-toggler{
+        margin-top: -9rem;
+
+    }
+    .navbar-nav{
+        display: flex;
+        align-items: flex-end;
+        margin: -3rem .5rem 0 0;
+    }
+   
+    .last-link{
+        padding-bottom: 10rem;
+    }
+    /* .navbar-collapse{
+        margin-bottom: 3rem;
+    } */
+    .shop-btn{
+        margin-top: 4rem;
+        margin-right: .8rem;
+        position: absolute;
+    }
+   
+}
+            /* Fin Navbar */
 .banner-header {
     height: 35vh;
     background-color: yellowgreen;
