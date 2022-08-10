@@ -21,15 +21,18 @@ header {
 
 .banner-header {
     height: 35vh;
-    background-color: greenyellow;
+    background-color: yellowgreen;
 }
 
 
 /* -----------  MAIN // CONTAINER  ----------- */
 
 main {
+    display: flex;
+    flex-direction: column;
     min-height: 70vh;
     background-color: #F9F2ED;
+    gap: 15px;
 }
 
 
@@ -52,6 +55,37 @@ main {
 
 /* -----------  MAIN // CARD CALL TO ACTION CAROUSEL  ----------- */
 
+
+
+
+
+/* --------------- CAROUSEL -------------- */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-carousel {
+    backdrop-filter: blur(2rem);
+    background-color: #00000117;
+    border-radius: 40px;
+    height: 23rem;
+    width: 290px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 567px) {
+    .product-carousel:not(:first-child){
+        display: none;
+    }
+}
+
+
+/* ------------- FIN CAROUSEL ------------- */
+
+
+
 #card-container {
     display: flex;
     flex-wrap: wrap;
@@ -67,15 +101,14 @@ main {
     background-color: #00000117;
     border-radius: 40px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    height: 23rem;
-    margin: 1rem;
-    width: 18rem;
+    height: 550px;
+    width: 290px;
     overflow: hidden;
 }
 
 .product-image {
     background-color: white;
-    height: 60%;
+    height: 65%;
 }
     .product-image img {
         object-fit: cover;
@@ -83,16 +116,12 @@ main {
         height: 100%;
     }
 
-.product-banner {
-    height: 50px;
-}
-
 .product-specification {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40%;
-    background-color: #FFD24C;
+    background-color: #FEA85D;
+    height: 35%;
     gap: 15px;
 }
     .product-specification h4 {
