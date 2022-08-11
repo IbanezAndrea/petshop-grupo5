@@ -22,55 +22,59 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div  class="col-lg-6 col-xl-8">
+            <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
+        </div>              
+        <div class="container-fluid d-flex justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
+        <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./farmacia.html">Medicamentos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                    </ul>
+                </li>                  
+                <li class="nav-item">
+                    <a class="nav-link last-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            
+            <a class="m-1 shop-btn" href="./carrito.html"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></a>
+        </div>
+    </div>
+</nav> 
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div  class="col-lg-6 col-xl-8">
-                <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
-            </div>              
-            <div class="container-fluid d-flex justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
-            <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./farmacia.html">Medicamentos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
-                        </ul>
-                    </li>                  
-                    <li class="nav-item">
-                        <a class="nav-link last-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <a class="m-1 shop-btn" href="./carrito.html"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></a>
-            </div>
-        </div>
-    </nav>     
-        <div class="banner-header container-fluid">
-        </div>
+    <div class="video-container">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/img/mixkit-dog-catches-a-ball-in-a-river-1494.mp4" type="video/mp4">
+          </video>
+    </div>    
     </header>
 
     <main class="p-3">
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active mb-4">
-                    <div class="card-wrapper gap-4 mt-3">
+<div class="container">
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active mb-4">
+                <div class="card-wrapper gap-4 mt-3">
                     <div class="product-carousel card-style">
                         <div class="product-image">
                             <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
                         </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
+                        <div class="product-specification p">
+                            <h4 class="mb-2 pt-1">Juguete interactivo IQ Treat Ball</h4>
                             <div class="price-tag justify-content-center py-2 ">
                                 <span>$</span>
                                 <p class="size-price">300</p>
@@ -89,9 +93,8 @@
                         <div class="product-image">
                             <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
                         </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
+                        <div class="product-specification pt-3">
+                            <h4 class="mb-2 pt-1">Juguete interactivo IQ Treat Ball</h4>
                             <div class="price-tag justify-content-center py-2 ">
                                 <span>$</span>
                                 <p class="size-price">300</p>
@@ -110,9 +113,8 @@
                         <div class="product-image">
                             <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
                         </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
+                        <div class="product-specification pt-3">
+                            <h4 class="mb-2 pt-1">Juguete interactivo IQ Treat Ball</h4>
                             <div class="price-tag justify-content-center py-2 ">
                                 <span>$</span>
                                 <p class="size-price">300</p>
@@ -128,7 +130,7 @@
                         </div>
                     </div>
                     
-                            </div>
+                </div>
                         </div>
                         </div>
                     </div>
@@ -152,7 +154,7 @@
                     </div>
                     <div>
                         <h3 class="text-center text-mindy pb-2 mt-2 me-5">Hola, soy Mindy,  </h3>
-                        <h3 class="text-mindy pt-1 pe-4 me-5 mb-4"><strong>BIENVENIDOS!</strong></h3>
+                        <h3 class="text-mindy pt-1 pe-4 me-5 mb-4"><strong class="fuente">BIENVENIDOS A MI TIENDA!</strong></h3>
                     </div>
                     <div>
                     </div>
