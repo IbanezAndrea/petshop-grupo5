@@ -14,11 +14,14 @@
   <style>
     @media(max-width:500px) {
       #cartHeaderP {
-        font-size: 5vw;
+        font-size: 5vw !important;
       }
     }
 
     @media(max-width:768px) {
+      #cartHeaderP {
+        font-size: 3vw !important;
+      }
       #mainContainer {
         flex-flow: wrap !important;
       }
@@ -31,10 +34,10 @@
     <div id="mainContainer" class="container bg-info d-flex">
       <div id="cartItems" class="col-sm-8 bg-danger ">
         <div id="cartHeader" class="d-flex">
-          <p id="cartHeaderP" class="col-4 text-center" style="font-size: 3vw;">producto</p>
-          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 3vw;">precio</p>
-          <p id="cartHeaderP" class="col-3 text-center" style="font-size: 3vw;">cantidad</p>
-          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 3vw;">subtotal</p>
+          <p id="cartHeaderP" class="col-4 text-center" style="font-size: 2vw;">producto</p>
+          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 2vw;">precio</p>
+          <p id="cartHeaderP" class="col-3 text-center" style="font-size: 2vw;">cantidad</p>
+          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 2vw;">subtotal</p>
         </div>
         <!-- contenedor de productos -->
         <div id="cardContainer">
