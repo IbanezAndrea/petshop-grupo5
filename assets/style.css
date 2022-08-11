@@ -15,7 +15,15 @@
     --light: #e5989b;
     --dark: #39576a;
   }
-
+.main{
+    background-color: var(--main-color);
+}
+.secondary{
+    background-color: var(--secondary);
+}
+.accent{
+    background-color: var(--accent);
+}
 
 /* -----------   HEADER   ----------- */
 
@@ -275,10 +283,12 @@ footer {
 
 .logo-footer {
     height: 8vh;
+    margin-left: 12rem;
 }
 .logo-footer img {
     height: 100%;
 }
+
 
 /* ------- whatsapp ------ */
 .whatsapp {
