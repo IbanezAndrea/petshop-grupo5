@@ -31,15 +31,15 @@ async function getData() {
         cardContainerP.innerHTML = ""
         array.forEach(item => {
             let cardBody = document.createElement("div");
-            cardBody.innerHTML = `  <div class="product-carousel card-style m-3">
+            cardBody.innerHTML = `  <div class="product-carousel card-style m-3 product">
             <div class="product-image ">
                 <img src="${item.imagen}" class=" img-fluid">
             </div>
-            <div class="product-specification">
+            <div class="product-specification px-2">
                 <h4 class="mt-5 pt-3">${item.nombre}</h4>
                 
-                <div class="d-flex justify-content-center">
-                    <span class="mt-2">$</span>
+                <div class="d-flex price-tag justify-content-center pt-4 pb-2">
+                    <span class="">$</span>
                     <p class="size-price">${item.precio}</p>
                     <span class="mt-2">ARG</span>
                 </div>
@@ -96,10 +96,10 @@ async function getData() {
                     }
                 }
             } if (agregoProductos === false) {
-              //  carrito.push(producto);
-              //  console.log(producto)
+            carrito.push(producto);
+              // console.log(producto)
             }
-           // console.log(producto)
+        console.log(producto)
             localStorage.setItem("carrito", JSON.stringify(carrito));
             //se setea carrito para ser llamado en el otro html con los datos que fueron enviados.
 
