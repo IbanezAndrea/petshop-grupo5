@@ -40,41 +40,42 @@
 <body>
 
   <main>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div  class="col-lg-6 col-xl-8">
-                <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
-            </div>              
-            <div class="container-fluid d-flex justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
-            <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./farmacia.html">Remedios</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
-                        </ul>
-                    </li>                  
-                    <li class="nav-item">
-                        <a class="nav-link last-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <a class="m-1 shop-btn active" href="#"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></a>
-            </div>
-        </div>
-    </header>
+    <nav class="navbar navbar-expand-lg">
+      <div  class="col-lg-6 col-xl-8">
+          <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
+      </div>              
+      <div class="container-fluid d-flex justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
+      <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./farmacia.html">Medicamentos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                  </ul>
+              </li>                  
+              <li class="nav-item">
+                  <a class="nav-link last-link" href="./contacto.html">Contacto</a>
+              </li>
+          </ul>
+          
+          <a class="m-1 shop-btn" href="#"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></a>
+      </div>
+  </div>
+</nav> 
+  
     <div id="mainContainer" class="container bg-info d-flex">
-      <div id="cartItems" class="col-sm-8 bg-danger ">
-        <div id="cartHeader" class="d-flex">
+      <div id="cartItems" class="col-sm-8 accent">
+        <div id="cartHeader" class="d-flex mt-2">
           <p id="cartHeaderP" class="col-4 text-center" style="font-size: 2vw;">producto</p>
           <p id="cartHeaderP" class="col-2 text-center" style="font-size: 2vw;">precio</p>
           <p id="cartHeaderP" class="col-3 text-center" style="font-size: 2vw;">cantidad</p>
@@ -123,8 +124,8 @@
         </div>
       </div>
       <!-- seccion sumatoria de montos de la compra -->
-      <div id="checkoutInfo" class="container col-sm-4 bg-dark bg-opacity-75 d-flex flex-column">
-        <div class="pt-5">
+      <div id="checkoutInfo" class="container col-sm-4 main bg-opacity-75 d-flex flex-column">
+        <div class="pt-3 mb-2">
           <div class="">
             <h6 class="text-center" style="font-size: 2vw;">Detalle</h6>
             <ul class="list-unstyled text-center">
@@ -133,7 +134,7 @@
             </ul>
           </div>
           <div class="text-center">
-            <button class="btn btn-primary">Finalizar compra</button>
+            <button class="btn secondary ">Finalizar compra</button>
           </div>
         </div>
       </div>
@@ -197,7 +198,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="modal-body secondary">
+                        <div class="modal-body">
                             <ul>
                                 <li>Cortes Lucas</li>
                                 <li>Dussex Adriel</li>
