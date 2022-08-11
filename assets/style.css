@@ -27,7 +27,9 @@
 .light{
     background-color: var(--light);
 }
-
+.dark{
+    background-color: var(--dark);
+}
 /* -----------   HEADER   ----------- */
 
             /* Navbar */
@@ -51,16 +53,18 @@ header {
     transform: scale(0.8)
   }
   50%{
-    transform: scale(1.1)
+    transform: scale(1.2)
   }
 }
 .shop-btn{
     border: 1px solid #2f29186a;
 }
-
+nav{
+    background-color: #F9F2ED;
+}
 @media (max-width: 768px){
     .navbar-toggler{
-        margin-top: -9rem;
+        margin-top: -6rem;
 
     }
     .navbar-nav{
@@ -72,12 +76,11 @@ header {
     .last-link{
         padding-bottom: 5rem;
     }
-    /* .navbar-collapse{
-        margin-bottom: 3rem;
-    } */
+    .navbar-collapse{
+        margin-bottom: -3rem;
+    }
     .shop-btn{
-        margin-top: -4rem;
-        /* margin-right: .8rem; */
+        position: relative;
     }
    
 }
@@ -86,10 +89,47 @@ header {
     min-height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    background-image:url(https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_129584968.jpeg);
+    background-position: center;    
+    /* background-image:url(https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_129584968.jpeg); */
 }
-
-
+header {
+    position: relative;
+    background-color: black;
+    height: 65vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+header video {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(244, 241, 241);
+    opacity: 0.1;
+    z-index: 1;
+  }
+  
 /* -----------  MAIN // CONTAINER  ----------- */
 
 main {
@@ -101,7 +141,9 @@ main {
     background-repeat: no-repeat;
     gap: 15px;
 }
-
+.fuente{
+    font-family: 'Fredoka One', cursive;
+}
 
 /* -----------  MAIN // ABOUT  ----------- */
 
@@ -189,7 +231,7 @@ main {
 
 .product-image {
     background-color: white;
-    height: 52%;
+    height: 60%;
 }
     .product-image img {
         object-fit: cover;
@@ -202,13 +244,13 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: var(--light);
-    height: 48%;
+    height: 40%;
     gap: 15px;
 }
     .product-specification h4 {
         text-align: center;
         font-weight: 700;
-        margin: 0 0 -.5rem 0;
+        margin: -.5rem 0 -.5rem 0;
     }
 
 .buy-button {
@@ -247,12 +289,26 @@ main {
         padding: 5px;
         width: 40%;
         }
+    .cardButton:hover{
+        background-color: var(--main-color);
+        background: linear-gradient(45deg,transparent 5%, var(--main-color) 0);
+        box-shadow: 5px 0 0 #fff;
+        font-weight: 700;
+        color: white;
+    }
 
 /* ---------- PRODUCTOS ---------- */
 
 .search-input{
     border-radius: 7px;
+    border: none;
+    height: 3rem;
+    width: 18rem;
 }
+.search-input:hover{ outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);}
 
 
 /* -----------  FOOTER ----------- */
