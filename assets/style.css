@@ -12,7 +12,7 @@
     --main-color: #f2a2b5;
     --secondary: #94d2bd;
     --accent: #91DFE3;
-    --light: #e5989b;
+    --light: #cdf5f8c5;
     --dark: #39576a;
   }
 .main{
@@ -23,6 +23,9 @@
 }
 .accent{
     background-color: var(--accent);
+}
+.light{
+    background-color: var(--light);
 }
 
 /* -----------   HEADER   ----------- */
@@ -93,7 +96,9 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 70vh;
-    background-color: #F9F2ED;
+    background-color: #fff5ee;
+    /* background-image: url(./img/bg.jpg); */
+    background-repeat: no-repeat;
     gap: 15px;
 }
 
@@ -102,8 +107,8 @@ main {
 
 .mindy{
     height: 15rem;
-    margin-bottom: 5rem;
     margin-left: -2rem;
+    margin-top: -7rem;
     transform: rotate(-18deg);
 }
 .text-mindy{
@@ -117,16 +122,16 @@ main {
 .aboutImage {
     border-radius: 30% 10% 50% 30%;
     background-color: var(--main-color);
-    width: 390px;
-    height: 230px;
+    width: 28rem;
+    height: 18rem;
     
 }
 
 .aboutText {
     border-radius: 20% 30% 10% 30%;
     background-color: var(--secondary);
-    width: 390px;
-    height: 250px;
+    width: 32rem;
+    height: 20rem;
 }
 
 
@@ -144,7 +149,11 @@ main {
     justify-content: center;
     gap: 10px;
 }
-
+.card-style{
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
+    box-shadow:  12px 12px 24px #afafaf,-12px -12px 24px #ffffff8a;
+}
 .product-carousel {
     backdrop-filter: blur(2rem);
     background-color: #00000117;
@@ -180,7 +189,7 @@ main {
 
 .product-image {
     background-color: white;
-    height: 49%;
+    height: 52%;
 }
     .product-image img {
         object-fit: cover;
@@ -192,8 +201,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--accent);
-    height: 51%;
+    background-color: var(--light);
+    height: 48%;
     gap: 15px;
 }
     .product-specification h4 {
@@ -222,6 +231,7 @@ main {
         color: black;
         font-size: 25px;
         margin: 0!important;
+        margin-bottom: -1rem;
     }
     .buy a {
         color: black;
@@ -237,6 +247,12 @@ main {
         padding: 5px;
         width: 40%;
         }
+
+/* ---------- PRODUCTOS ---------- */
+
+.search-input{
+    border-radius: 7px;
+}
 
 
 /* -----------  FOOTER ----------- */
@@ -304,12 +320,9 @@ footer {
     font-size: 22px;
     font-weight: 800;
     z-index: 100;
-  }
-  
-  .whatsapp-icon {
+}
+.whatsapp-icon {
     margin-top: 13px;
-  }
- 
-
+}
 
 
