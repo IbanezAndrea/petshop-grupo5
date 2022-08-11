@@ -6,6 +6,15 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/* -------- COLORES ----------- */
+
+:root {
+    --main-color: #f2a2b5;
+    --secondary: #94d2bd;
+    --accent: #91DFE3;
+    --light: #e5989b;
+    --dark: #39576a;
+  }
 
 
 /* -----------   HEADER   ----------- */
@@ -35,11 +44,7 @@ header {
   }
 }
 .shop-btn{
-    margin-right: 2rem;
     border: 1px solid #2f29186a;
-}
-.navbar-nav{
-    margin-left: 10rem;
 }
 
 @media (max-width: 768px){
@@ -50,26 +55,27 @@ header {
     .navbar-nav{
         display: flex;
         align-items: flex-end;
-        margin: -3rem .5rem 0 0;
+        margin: -3rem 0 0 0;
     }
    
     .last-link{
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
     }
     /* .navbar-collapse{
         margin-bottom: 3rem;
     } */
     .shop-btn{
-        margin-top: 4rem;
-        margin-right: .8rem;
-        position: absolute;
+        margin-top: -4rem;
+        /* margin-right: .8rem; */
     }
    
 }
             /* Fin Navbar */
 .banner-header {
-    height: 35vh;
-    background-color: yellowgreen;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    background-image:url(https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_129584968.jpeg);
 }
 
 
@@ -86,14 +92,31 @@ main {
 
 /* -----------  MAIN // ABOUT  ----------- */
 
+.mindy{
+    height: 15rem;
+    margin-bottom: 5rem;
+    margin-left: -2rem;
+    transform: rotate(-18deg);
+}
+.text-mindy{
+    padding-right: 4rem;
+}
+.paw{
+    margin-left: 6rem;
+    transform: rotate(40deg);
+
+}
 .aboutImage {
-    background-color: red;
+    border-radius: 30% 10% 50% 30%;
+    background-color: var(--main-color);
     width: 390px;
-    height: 250px;
+    height: 230px;
+    
 }
 
 .aboutText {
-    background-color: aqua;
+    border-radius: 20% 30% 10% 30%;
+    background-color: var(--secondary);
     width: 390px;
     height: 250px;
 }
@@ -118,8 +141,8 @@ main {
     backdrop-filter: blur(2rem);
     background-color: #00000117;
     border-radius: 40px;
-    height: 23rem;
-    width: 290px;
+    height: 30rem;
+    width: 18rem;
     overflow: hidden;
 }
 
@@ -129,11 +152,6 @@ main {
     }
 }
 
-
-/* ------------- FIN CAROUSEL ------------- */
-
-
-
 #card-container {
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +160,7 @@ main {
     gap: 15px;
 }
 
-
-
-.product {
+/* .product {
     backdrop-filter: blur(2rem);
     background-color: #00000117;
     border-radius: 40px;
@@ -152,11 +168,11 @@ main {
     height: 550px;
     width: 290px;
     overflow: hidden;
-}
+} */
 
 .product-image {
     background-color: white;
-    height: 65%;
+    height: 49%;
 }
     .product-image img {
         object-fit: cover;
@@ -168,13 +184,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FEA85D;
-    height: 35%;
+    background-color: var(--accent);
+    height: 51%;
     gap: 15px;
 }
     .product-specification h4 {
         text-align: center;
         font-weight: 700;
+        margin: 0 0 -.5rem 0;
     }
 
 .buy-button {
@@ -187,6 +204,7 @@ main {
     .price-tag {
         display: flex;
         align-items: center;
+        margin: -2rem 0 -2rem 0;
     }
     .price-tag span {
         font-size: 10px;
@@ -194,7 +212,7 @@ main {
     }
     .size-price {
         color: black;
-        font-size: 20px;
+        font-size: 25px;
         margin: 0!important;
     }
     .buy a {
@@ -205,7 +223,7 @@ main {
     .cardButton {
         background: linear-gradient(45deg,transparent 5%,#fff 0);
         border: 0;
-        box-shadow: 5px 0 0 #00e6f6;
+        box-shadow: 5px 0 0 var(--main-color);
         color: black;
         font-size: 18px;
         padding: 5px;
@@ -213,10 +231,75 @@ main {
         }
 
 
-
 /* -----------  FOOTER ----------- */
 
 footer {
-    min-height: 20vh;
-    background-color: green;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.footer-contact {
+    height: 80%;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+.mediosDePago-img img {
+    height: 30px;
+}
+.mediosDeEnvio-img img {
+    height: 30px;
+}
+
+.medios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.contacto-about p {
+    text-align: right;
+}
+
+.copy {
+    height: 20%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 8vh;
+}
+.logo-footer img {
+    height: 100%;
+}
+
+/* ------- whatsapp ------ */
+.whatsapp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 2.5rem;
+    right: 15px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    z-index: 100;
+  }
+  
+  .whatsapp-icon {
+    margin-top: 13px;
+  }
+ 
+
+
+
