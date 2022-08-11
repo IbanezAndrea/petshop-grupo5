@@ -11,48 +11,87 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+  <style>
+    @media(max-width:500px) {
+      #cartHeaderP {
+        font-size: 5vw;
+      }
+    }
+
+    @media(max-width:768px) {
+      #mainContainer {
+        flex-flow: wrap !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <main>
-    <div class="container bg-info d-flex flex-column flex-sm-row">
-      <div id="cartItems" class="col-8 bg-danger ">
-        <div id="cartHeader" class="d-flex bg-light">
-          <h3 class="col-6" style="text-align:center">Producto</h3>
-          <h3 class="col-2">Precio</h3>
-          <h3 class="col-4" style="text-align:center">Cantidad</h3>
+    <div id="mainContainer" class="container bg-info d-flex">
+      <div id="cartItems" class="col-sm-8 bg-danger ">
+        <div id="cartHeader" class="d-flex">
+          <p id="cartHeaderP" class="col-4 text-center" style="font-size: 3vw;">producto</p>
+          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 3vw;">precio</p>
+          <p id="cartHeaderP" class="col-3 text-center" style="font-size: 3vw;">cantidad</p>
+          <p id="cartHeaderP" class="col-2 text-center" style="font-size: 3vw;">subtotal</p>
         </div>
+        <!-- contenedor de productos -->
         <div id="cardContainer">
           <template id="cardTemplate">
-            <div id="cartItem" class="d-flex justify-content-around"
+            <!-- card de producto -->
+            <div id="cartItem" class="d-flex justify-content-around pt-4"
               style="background-color: rgba(255, 255, 255, 0.346) ;">
-              <div id="productData" class="d-flex align-items-center border col-3">
-                <img id="productImage" src="" alt="" style="width:100px ; height: 100px;">
-                <p id="productName"></p>
+              <!-- imagen y nombre de producto -->
+              <div id="productData" class="d-flex align-items-center col-4 ">
+                <img id="productImage" src="" alt="" class="img-thumbnail col-4" style="width: 100px; height: 100px;">
+                <div class="col-8">
+                  <p id="productName" class="text-center pt-2 lead"></p>
+                </div>
               </div>
-              <div class="d-flex align-items-center border">
-                <p id="productPrice"></p>
+              <!-- precio de producto -->
+              <div class="d-flex align-items-center justify-content-center col-2 ">
+                <p id="productPrice" class="pt-2"></p>
               </div>
-              <div class="d-flex align-items-center border">
-                <div class="input-group input-number-group">
-                  <div class="input-group-button">
+              <!-- input de cantidad con botones sumar y restar -->
+              <div class="d-flex align-items-center justify-content-center col-3 ">
+                <div class="input-group input-number-group justify-content-center">
+                  <div class="substractButton px-2">
                     <button class="rounded">-</button>
                   </div>
-                  <input id="productQuantity" class="input-number" type="number" value="" min="1" max="" style="width:3rem;">
-                  <div class="input-group-button">
+                  <input id="productQuantity" class="input-number text-center" type="number" value="" min="1" max="100"
+                    style="width:3rem;">
+                  <div class="addButton px-2">
                     <button class="rounded">+</button>
                   </div>
                 </div>
-                <div>
-                  <button class="rounded removeItemBtn">X</button>
-                </div>
+              </div>
+              <!-- subtotal -->
+              <div class="d-flex align-items-center justify-content-center col-2 ">
+                <p id="productSubtotal" class="pt-2">$455</p>
+              </div>
+              <!-- boton quitar producto del carrito -->
+              <div class="d-flex align-items-center justify-content-center col-1 ">
+                <button class="rounded removeItemBtn ">X</button>
               </div>
             </div>
           </template>
         </div>
       </div>
-      <div id="checkoutInfo" class="col-4 bg-dark d-flex flex-column">
-
+      <!-- seccion sumatoria de montos de la compra -->
+      <div id="checkoutInfo" class="container col-sm-4 bg-dark bg-opacity-75 d-flex flex-column">
+        <div class="pt-5">
+          <div class="">
+            <h6 class="text-center" style="font-size: 2vw;">Detalle</h6>
+            <ul class="list-unstyled text-center">
+              <li style="font-size: 2vw;">Cantidad de productos:</li>
+              <li style="font-size: 2vw;">Total:</li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary">Finalizar compra</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
