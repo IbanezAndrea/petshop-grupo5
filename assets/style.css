@@ -95,14 +95,14 @@ nav{
 header {
     position: relative;
     background-color: black;
-    height: 65vh;
+    height: 50vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
   }
 header video {
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
