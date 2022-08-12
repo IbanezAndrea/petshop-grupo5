@@ -28,26 +28,26 @@ async function getData() {
         cardContainerP.innerHTML = ""
         array.forEach(item => {
             let cardBody = document.createElement("div");
-            cardBody.innerHTML = `  <div class="product-carousel card-style m-3">
-                <div class="product-image ">
-                    <img src="${item.imagen}" class=" img-fluid">
+            cardBody.innerHTML = `  <div class="product-carousel card-style m-3 product">
+            <div class="product-image ">
+                <img src="${item.imagen}" class=" img-fluid">
+            </div>
+            <div class="product-specification px-2">
+                <h4 class="mt-5 pt-3">${item.nombre}</h4>
+                
+                <div class="d-flex price-tag justify-content-center pt-4 pb-2">
+                    <span class="">$</span>
+                    <p class="size-price">${item.precio}</p>
+                    <span class="mt-2">ARG</span>
                 </div>
-                <div class="product-specification">
-                    <h4 class="mt-4 pt-1">${item.nombre}</h4>
-                    
-                    <div class="d-flex justify-content-center py-2 ">
-                        <span>$</span>
-                        <p class="size-price">${item.precio}</p>
-                        <span>ARG</span>
+                <div class="buy-button pb-5 d-flex justify-content-evenly">
+                    <div class="form-group mb-4">
+                    <label class="card-input ps-2">Cantidad</label>
+                        <input type="number" min="1" value="1" max="${item.stock}" class="form-control mb-1 cantidad-input" style="width: 5rem;">
                     </div>
-                    <div class="buy-button d-flex justify-content-evenly">
-                        <div class="form-group mb-4">
-                        <label class="card-input ps-2">Cantidad</label>
-                            <input type="number" min="1" value="1" max="${item.stock}" class="form-control cantidad-input" style="width: 5rem;">
-                        </div>
-                        <button class="cardButton mb-1 btn-primary button-class" data-th="${item._id}" me-2">Agregar</button>
-                    </div>
-                </div>`
+                    <button class="cardButton mb-1 btn-primary button-class" data-th="${item._id}" me-2">Agregar</button>
+                </div>
+            </div>`
             cardContainerP.appendChild(cardBody);
         })
     }
