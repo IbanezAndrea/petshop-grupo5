@@ -144,16 +144,37 @@ main {
 
 
 /* --------------- CAROUSEL -------------- */
+.container-stock-sale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-stock-sale {
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-stock-sale h4 {
+    font-family: "Fredoka One";
+    font-size: 2rem;
+}
+.carousel-stock {
+    max-width: 290px;
+}
+
+
+
+
+
 .card-wrapper {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.card-style{
-    border-radius: 30px;
-    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
-    box-shadow:  12px 12px 24px #afafaf,-12px -12px 24px #ffffff8a;
-}
+
 .product-carousel {
     backdrop-filter: blur(2rem);
     background-color: #00000117;
@@ -163,11 +184,143 @@ main {
     overflow: hidden;
 }
 
+.cardCarousel-style {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
+}
+
+
 @media screen and (max-width: 567px) {
     .product-carousel:not(:first-child){
         display: none;
     }
 }
+
+
+/* ------------- FIN CAROUSEL ------------ */
+
+/* ----------- ABOUT ------------ */
+.bienvenida {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+    #mindy-bienvenida {
+        height: 290px;
+    }
+
+.hi-mindy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    width: 290px;
+    background-color: #f2a2b5;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 45%;
+    padding: 25px;
+}
+    .card-saludo h3 {
+        text-align: center;
+        font-family: "Fredoka One";
+    }
+    .card-saludo p {
+        text-align: center;
+    }
+
+.card-saludo1, .card-saludo2, .card-saludo3, .card-saludo4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    width: 290px;
+    background-color: #f2a2b5;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 45%;
+    padding: 25px;
+}
+    .card-saludo1 {
+        background-image: url(/assets/img/perrito1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 55%;
+        border-top-right-radius: 35%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 45%;
+    }
+    .card-saludo2 {
+        background-image: url(/assets/img/perrito2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 35%;
+        border-top-right-radius: 45%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 45%;
+    }
+    .card-saludo3 {
+        background-image: url(/assets/img/perrito3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 55%;
+        border-top-right-radius: 65%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 45%;
+    }
+    .card-saludo4 {
+        background-image: url(/assets/img/perrito4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 55%;
+        border-top-right-radius: 45%;
+        border-bottom-left-radius: 60%;
+        border-bottom-right-radius: 65%;
+    }
+
+
+.comunidad h3 {
+    text-align: center;
+    font-family: 'Fredoka One';
+}
+.comunidad-texto {
+    display: flex;
+    justify-content: center;
+}
+.comunidad p {
+    max-width: 600px;
+    text-align: center;
+}
+.hearth-icon {
+    padding: 20px;
+    border-radius: 10%;
+    background-color: var(--dark);
+    color: var(--main-color);
+}
+.hearth-icon:hover {
+    color: var(--secondary);
+}
+
+
 
 #card-container {
     display: flex;
@@ -176,6 +329,13 @@ main {
     justify-content: center;
     gap: 15px;
 }
+
+.card-style{
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
+    box-shadow:  12px 12px 24px #afafaf,-12px -12px 24px #ffffff8a;
+}
+
 
 /* .product {
     backdrop-filter: blur(2rem);
@@ -189,7 +349,7 @@ main {
 
 .product-image {
     background-color: white;
-    height: 52%;
+    height: 60%;
 }
     .product-image img {
         object-fit: cover;
@@ -202,7 +362,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: var(--light);
-    height: 48%;
+    height: 40%;
     gap: 15px;
 }
     .product-specification h4 {
@@ -263,30 +423,43 @@ footer {
     flex-direction: column;
 }
 
-.footer-contact {
-    height: 80%;
-    background-color: var(--accent);
-    display: flex;
-    align-items: center;
-}
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-}
-.mediosDePago-img img {
-    height: 30px;
-}
-.mediosDeEnvio-img img {
+
+.mediosDePago-img img, .mediosDeEnvio-img img {
     height: 30px;
 }
 
+
+.methods-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    background-color: #91DFE3;
+}
+
 .medios {
+    max-width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px
 }
-.contacto-about p {
-    text-align: right;
+
+.contacto-about {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacto-about a {
+    color: black;
+}
+.contacto-about a:hover {
+    color:var(--main-color);
+    font-style: italic;
 }
 
 .copy {
@@ -297,13 +470,37 @@ footer {
     align-items: center;
 }
 
+
+.footer {
+    height: 10vh;
+    max-width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 .logo-footer {
-    height: 8vh;
-    margin-left: 12rem;
+    height: 6vh;
 }
 .logo-footer img {
     height: 100%;
 }
+.social {
+    display: flex;
+    max-width: 100%;
+    
+}
+.redes {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+
+
+
+
 
 
 /* ------- whatsapp ------ */
