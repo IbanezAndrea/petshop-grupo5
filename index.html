@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,216 +11,174 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <!-- Whatsapp web-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/6eeee6e308.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div  class="col-lg-6 col-xl-8">
-                <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo" alt="logo"></a>
-            </div>              
-            <div class="container-fluid d-flex justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
-            <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./farmacia.html">Medicamentos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
-                        </ul>
-                    </li>                  
-                    <li class="nav-item">
-                        <a class="nav-link last-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <a class="m-1 shop-btn" href="./carrito.html"><img class="shop-img" src="./assets/img/shopping-cart.png" alt=""></a>
+            <div class="col-lg-6 col-xl-8">
+                <a class="navbar-brand ps-5" href="#"><img src="./assets/img/logo-navVertical.png" id="logo"
+                        alt="logo"></a>
             </div>
-        </div>
-    </nav>     
+            <div class="container-fluid d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-lg-6 col-xl-4 collapse navbar-collapse justify-content-evenly ps-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./farmacia.html">Medicamentos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link last-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <a class="m-1 shop-btn" href="./carrito.html"><img class="shop-img"
+                            src="./assets/img/shopping-cart.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
         <div class="banner-header container-fluid">
         </div>
     </header>
 
     <main class="p-3">
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active mb-4">
-                    <div class="card-wrapper gap-4 mt-3">
-                    <div class="product-carousel card-style">
-                        <div class="product-image">
-                            <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
-                        </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
-                            <div class="price-tag justify-content-center py-2 ">
-                                <span>$</span>
-                                <p class="size-price">300</p>
-                                <span>ARG</span>
-                            </div>
-                            <div class="buy-button justify-content-evenly">
-                                <div class="form-group mb-4">
-                                <label class="card-input ps-2" for="exampleInputPassword1">cantidad</label>
-                                    <input type="number" min="1" value="1" max="${item.stock}" class="form-control cantidad-input" style="width: 5rem;">
-                                </div>
-                                <button class="cardButton mb-1  me-2">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-carousel card-style">
-                        <div class="product-image">
-                            <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
-                        </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
-                            <div class="price-tag justify-content-center py-2 ">
-                                <span>$</span>
-                                <p class="size-price">300</p>
-                                <span>ARG</span>
-                            </div>
-                            <div class="buy-button justify-content-evenly">
-                                <div class="form-group mb-4">
-                                <label class="card-input ps-2" for="exampleInputPassword1">cantidad</label>
-                                    <input type="number" min="1" value="1" max="${item.stock}" class="form-control cantidad-input" style="width: 5rem;">
-                                </div>
-                                <button class="cardButton mb-1  me-2">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-carousel card-style">
-                        <div class="product-image">
-                            <img src="https://puppis.vteximg.com.br/arquivos/ids/163598-1000-1000/228767.jpg?v=636746890828270000" alt="">
-                        </div>
-                        <div class="product-specification">
-                            <h4 class="mt-4 pt-1">Juguete interactivo IQ Treat Ball</h4>
-                            <p class="card-text ps-3 pe-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veritatis dicta velit quod quos libero.</p>
-                            <div class="price-tag justify-content-center py-2 ">
-                                <span>$</span>
-                                <p class="size-price">300</p>
-                                <span>ARG</span>
-                            </div>
-                            <div class="buy-button justify-content-evenly">
-                                <div class="form-group mb-4">
-                                <label class="card-input ps-2" for="exampleInputPassword1">cantidad</label>
-                                    <input type="number" min="1" value="1" max="${item.stock}" class="form-control cantidad-input" style="width: 5rem;">
-                                </div>
-                                <button class="cardButton mb-1  me-2">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+        <div class="container bienvenida">
+            <div class="hi-mindy">
+                <div class="hi-img">
+                    <img src="./assets/img/mindy-circle.png" id="mindy-bienvenida" alt="mindy">
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
+                <div class="card-saludo">
+                    <h3>¡Hola!</h3>
+                    <p>Mi nombre es Mindy! Soy una perrita muuuy juguetona, y el rostro de este gran proyecto que decidimos comenzar junto a mi papá.</p>
+                </div>
             </div>
         </div>
-        <hr class="container mb-4">
-        <div class="container">
+
+        <hr class="container">
+
+        <div class="container-stock-sale container d-flex align-items-center justify-content-evenly gap-4">
+            <div class="info-stock-sale">
+                <h4>¡Aprovechá estos productos antes que se agoten!</h4>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-stock" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                </div>
+            </div>
+        </div>
+        <hr class="container">
+        <div class="container justify-content-center d-flex flex-column comunidad gap-5">
+            <h3>¡Unite a la comunidad Mindy!</h3>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <div class="card-saludo1"></div>
+                <div class="card-saludo2"></div>
+                <div class="card-saludo3"></div>
+                <div class="card-saludo4"></div>
+            </div>
+            <div class="comunidad-texto d-flex flex-column align-items-center">
+                <p>Con la compra de cualquiera de nuestros juguetes, estás colaborando con distintos grupos de asistencia para promover y ayudar en el rescate, la recuperación y la adopción de animales abandonados.</p>
+                <a href="./juguetes.html"><i class="hearth-icon fa-solid fa-heart"></i></a>
+            </div>
+        </div>
+
+
+        <!-- <div class="container">
             <div class="d-flex align-items-center justify-content-center flex-wrap gap-5">
-                <div class="aboutImage d-flex align-items-center justify-content-evenly ">
+                <div class="hi-mindy aboutImage d-flex align-items-center justify-content-evenly ">
                     <div>
                         <img class="mindy mb-5" src="./assets/img/MindySinFondo.png" alt="">
                     </div>
                     <div>
-                        <h3 class="text-center text-mindy pb-2 mt-2 me-5">Hola, soy Mindy,  </h3>
-                        <h3 class="text-mindy pt-1 pe-4 me-5 mb-4"><strong>BIENVENIDOS!</strong></h3>
+                        <img src="./assets/img/MindySinFondo.png" alt="">
                     </div>
                     <div>
                     </div>
                 </div>
                 <div class="aboutText d-flex align-items-center justify-content-center">
-                    <p class="ps-5 pe-5">Esta página está inspirada en mí y mis amigos, aquí podrás encontrar todo lo que le haga falta a tu compañero peludo. O simplemente hacerle un regalo para demostrarle cuanto lo amas!</p>
+                    <p class="ps-5 pe-5">Esta página está inspirada en mí y mis amigos, aquí podrás encontrar todo lo
+                    que le haga falta a tu compañero peludo. O simplemente hacerle un regalo para demostrarle cuanto
+                    lo amas!</p>
+                    <div class="container d-flex flex-wrap justify-content-end">
+                        <img class="paw" src="./assets/img/paw1.gif" alt="" style="height: 5rem;">
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr class="container">
+        </div> -->
+
+
         
-        <div class="container d-flex flex-wrap justify-content-end">
-            <img class="paw" src="./assets/img/paw1.gif" alt="" style="height: 5rem;">
-        </div>
-    </div> 
-    <a
-      href="https://wa.me/https://web.whatsapp.com/?text=Hola!%20Me%20gustaría%20consultar%20por%20el%20servicio%20de%20..."
-      class="whatsapp"
-      target="_blank"
-    >
-      <i class="fa fa-whatsapp whatsapp-icon"></i
-    ></a>        
-  </div>
+
+
+        <!-- <a href="https://wa.me/https://web.whatsapp.com/?text=Hola!%20Me%20gustaría%20consultar%20por%20el%20servicio%20de%20..."
+            class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a> -->
     </main>
 
-    <footer >
-        <div class="footer-contact">
-            <div class="container footer-info">
-                <div class="medios">
-                    <div class="medios-de-pago">
-                        <p>Medios de pago</p>
-                        <div class="mediosDePago-img">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mercadopago.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/pagofacil.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/rapipago.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/deposito.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/efectivo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="metodos-de-envio">
-                        <p>Medios de envío</p>
-                        <div class="mediosDeEnvio-img">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/andreani.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/correo-argentino.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/personalizado.png" alt="">
-                            <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/acordar.png" alt="">
-                        </div>
+
+    <footer>
+        <div class="container-fluid methods-contact">
+            <div class="medios">
+                <div class="medios-de-pago">
+                    <p class="fw-bold">Medios de pago</p>
+                    <div class="mediosDePago-img d-flex flex-wrap gap-1">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mercadopago.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/pagofacil.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/rapipago.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/deposito.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/efectivo.png" alt="">
                     </div>
                 </div>
-                <div class="contacto-about">
-                    <p>Contacto</p>
-                    <p>contacto@mindy.com</p>
-                    <p>+5493425185556</p>
-                    <p>mindy.petshop</p>
+                <div class="metodos-de-envio">
+                    <p class="fw-bold">Medios de envío</p>
+                    <div class="mediosDeEnvio-img d-flex flex-wrap gap-1">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/andreani.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/correo-argentino.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/personalizado.png" alt="">
+                        <img src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/acordar.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="contacto-about">
+                <p class="fw-bold">Contacto</p>
+                <a class="text-decoration-none" href="mailto:contacto@mindy.com">contacto@mindy.com</a>
+                <a class="text-decoration-none" href="tel:++5493425185556">+5493425185556</a>
+                <a class="text-decoration-none" href="https://www.instagram.com/">mindy.petshop</a>
+            </div>
+
         </div>
-        <div class="copy d-flex justify-content-evenly">
-            <div class="button-modal">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn secondary ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="container-fluid footer">
+            <div class="button-modal modal-cohort">
+                <button type="button" class="btn secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Cohort 32 | Grupo 5
                 </button>
 
-                <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -252,9 +211,9 @@
                     <img src="./assets/img/MindySinFondo.png" alt="">
                 </a>
             </div>
-            <div class="d-flex col-md-4 justify-content-center mt-3">
-                <ul class="list-unstyled d-flex redes">
-                    <li class="ms-3">
+            <div class="social">
+                <ul class="list-unstyled redes">
+                    <li>
                         <a href="#" class="d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#91DFE3"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
@@ -263,7 +222,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="ms-3">
+                    <li>
                         <a href="#" class="d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#91DFE3"
                                 class="bi bi-twitter" viewBox="0 0 16 16">
@@ -272,7 +231,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="ms-3">
+                    <li>
                         <a href="#" class="d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#91DFE3"
                                 class="bi bi-facebook" viewBox="0 0 16 16">
@@ -286,7 +245,10 @@
         </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
