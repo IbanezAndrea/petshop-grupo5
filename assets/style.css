@@ -69,9 +69,6 @@ header {
     }
 }
 
-.shop-btn {
-    border: 1px solid #2f29186a;
-}
 
 nav {
     background-color: #F9F2ED;
@@ -80,7 +77,6 @@ nav {
 @media (max-width: 768px) {
     .navbar-toggler {
         margin-top: -6rem;
-
     }
 
     .navbar-nav {
@@ -89,13 +85,10 @@ nav {
         margin: -3rem 0 0 0;
     }
 
-    .last-link {
-        padding-bottom: 5rem;
+    .nav-item{
+        padding-top: 1.2rem;
     }
 
-    .navbar-collapse {
-        margin-bottom: -3rem;
-    }
 
     .shop-btn {
         position: relative;

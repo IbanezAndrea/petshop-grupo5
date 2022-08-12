@@ -3,18 +3,11 @@ let cardTemplate = cardContainer.querySelector('#cardTemplate')
 //Selecciona al cardContainer para crear las card del carrito adentro.
 
 //Recolecta la data de la API.
-async function getData() {
-  await fetch("https://apipetshop.herokuapp.com/api/articulos")
-    .then(response => response.json())
-    .then(json => data = json)
-  let articulos = data.response
   guardarTodo(articulos)
 
   //traer storage a una variable
-  let articulosStorage = JSON.parse(localStorage.getItem('algo'));
+  let articulosStorage = JSON.parse(localStorage.getItem('carrito'));
   console.log(articulosStorage)
-
-
   crearCartas(articulosStorage);
 
   //Imprime las cartas del carrito.
@@ -113,7 +106,3 @@ console.log(articulosStorage)
     removerTodasLasCard(todasLasCards)
     localStorage.clear()
   })
-
-
-}
-getData()
