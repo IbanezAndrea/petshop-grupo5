@@ -54,21 +54,21 @@
                 <p id="productPrice" class="pt-2"></p>
               </div>
               <!-- input de cantidad con botones sumar y restar -->
-              <div class="d-flex align-items-center justify-content-center col-3 ">
+              <div class="d-flex align-items-center justify-content-center col-3">
                 <div class="input-group input-number-group justify-content-center">
-                  <div class="substractButton px-2">
-                    <button class="rounded">-</button>
+                  <div class="px-2">
+                    <button class="minusButton rounded">-</button>
                   </div>
                   <input id="productQuantity" class="input-number text-center" type="number" value="" min="1" max="100"
                     style="width:3rem;">
-                  <div class="addButton px-2">
-                    <button class="rounded">+</button>
+                  <div class="px-2">
+                    <button class="plusButton rounded">+</button>
                   </div>
                 </div>
               </div>
               <!-- subtotal -->
               <div class="d-flex align-items-center justify-content-center col-2 cart-items">
-                <p  class="pt-2 subTotal">$455</p>
+                <p  class="pt-2 subTotal"></p>
               </div>
               <!-- boton quitar producto del carrito -->
               <div class="d-flex align-items-center justify-content-center col-1 ">
@@ -85,7 +85,7 @@
                         <h6 class="text-center" style="font-size: 2vw;">Detalle</h6>
                         <ul class="list-unstyled text-center">
                             <li style="font-size: 2vw;">Cantidad de productos:</li>
-                            <li style="font-size: 2vw;">Total:</li>
+                            <li id="totalLi" style="font-size: 2vw;">Total:</li>
                         </ul>
                     </div>
                     <div>
