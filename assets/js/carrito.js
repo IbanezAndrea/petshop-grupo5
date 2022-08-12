@@ -1,7 +1,7 @@
 let cardContainer = document.getElementById('cardContainer')
 let cardTemplate = cardContainer.querySelector('#cardTemplate')
-function decrement(){
-document.getElementById('productQuantity').stepDown();
+function decrement() {
+  document.getElementById('productQuantity').stepDown();
 }
 async function getData() {
   await fetch("https://apipetshop.herokuapp.com/api/articulos")
@@ -11,28 +11,38 @@ async function getData() {
   console.log(articulos)
 
   //traer localstorage a una variable
-  let storageItems = JSON.parse(localStorage.getItem('carrito'));
+  var storageItems = JSON.parse(localStorage.getItem('carrito'));
   console.log(storageItems)
 
   //crear array con articulos de la api segun items del storage
-  storageItems = storageItems.map((item) => {
-    let image
-    let name
-    let price
-    articulos.forEach((article) => {
-      if (article._id === item.id) {
-        image = article.imagen
-        name = article.nombre
-        price = article.precio
-      }
-    })
-    return {
-      ...item,
-      imagen: image,
-      nombre: name,
-      precio: price
+  function updateItemsArray() {
+    if (storageItems != null) {
+      storageItems = storageItems.map((item) => {
+        let image
+        let name
+        let price
+        let cantidad = Number(item.cantidad)
+        articulos.forEach((article) => {
+          if (article._id === item.id) {
+            image = article.imagen
+            name = article.nombre
+            price = article.precio
+          }
+        })
+        return {
+          ...item,
+          cantidad,
+          imagen: image,
+          nombre: name,
+          precio: price
+        }
+      })
+      console.log(storageItems)
+      renderCards(storageItems);
+      updateDetails()
     }
-  })
+  }
+  updateItemsArray()
   //Imprime las cartas del carrito.
   function renderCards(array) {
     array.forEach(e => {
@@ -49,9 +59,6 @@ async function getData() {
       cardContainer.append(card)
     });
   }
-  renderCards(storageItems);
-  updateDetails()
-
 
   //Remueve la card del carrito.
   let removeCartItemButtons = document.getElementsByClassName('removeItemBtn')
@@ -63,6 +70,7 @@ async function getData() {
     })
   }
 
+  //actualizar caja de texo de cantidad al clickear botones + o -
   let minusButtons = document.getElementsByClassName('minusButton')
   for (var i = 0; i < minusButtons.length; i++) {
     var button = minusButtons[i]
@@ -71,18 +79,14 @@ async function getData() {
       let textboxValue = event.target.parentElement.parentElement.parentElement.closest("div").lastChild.previousElementSibling.value
       document.getElementById(`${textBoxId}`).stepDown();
 
-        storageItems = storageItems.map((item) => {
-          if (item.id === textBoxId) {
-            return {
-              ...item,
-              cantidad: textboxValue
-            }
+      storageItems = storageItems.map((item) => {
+        if (item.id == textBoxId) {
+          return {
+            ...item,
+            cantidad: textboxValue
           }
-        })
-        renderCards(storageItems);
-        updateDetails()
-
-
+        }
+      })
     })
   }
   let plusButtons = document.getElementsByClassName('plusButton')
@@ -101,14 +105,11 @@ async function getData() {
           }
         }
       })
-      renderCards(storageItems);
-      updateDetails()
 
 
     })
   }
-  //actualizar caja de texo de cantidad al clickear botones + o -
-  
+
 
   //Sube un array al LocalStorage
   function updateStorage(array) {
