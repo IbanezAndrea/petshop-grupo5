@@ -31,7 +31,7 @@ function printCarousel(arrayDatos){
                 carouselItem.className = "carousel-item"
             }
             carouselItem.innerHTML = `
-                                    <div class="card-wrapper">
+                                    <div class="card-wrapper product">
                                         <div class="product-carousel">
                                             <div class="product-image">
                                                 <img src="${item.imagen}" alt="">
@@ -46,9 +46,9 @@ function printCarousel(arrayDatos){
                                                 <div class="buy-button justify-content-evenly">
                                                     <div class="form-group mb-4">
                                                     <label class="card-input ps-2" for="exampleInputPassword1">cantidad</label>
-                                                        <input type="number" min="1" value="1" max="${item.stock}" class="form-control cantidad-input" style="width: 5rem;">
+                                                        <input type="number" min="1" value="1" max="${item.stock}" class="cantidad-input form-control cantidad-input" style="width: 5rem;">
                                                     </div>
-                                                    <button class="cardButton mb-1  me-2">Agregar</button>
+                                                    <button class="cardButton mb-1 btn-primary button-class" data-th="${item._id}">Agregar</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -57,12 +57,53 @@ function printCarousel(arrayDatos){
             container1.appendChild(carouselItem)
         }
     });
+
+
+
+let carrito = []; 
+// agarra el carrito
+if (localStorage.getItem("carrito")) {
+    carrito = JSON.parse(localStorage.getItem("carrito"));
 }
 
+    enviarAlCarrito()
+    function enviarAlCarrito() { 
+        document.querySelectorAll('.btn-primary').forEach(element => element.addEventListener('click', function() {
 
+        let cantidad = this.closest('.product').querySelector('.cantidad-input').value; 
+        //class que tomo del input
+        console.log(cantidad)
+        let id = this.getAttribute("data-th"); 
+        // obtiene la id cada vez que clickeo el boton que agrega al carrito
+       // console.log(id)
 
+        let agregoProductos = false; //comienza vacio
+        let producto = { 
+            id: id,
+            cantidad: cantidad
+        }
+        if (localStorage.getItem("carrito")) {
+            for (let i = 0; carrito.length > i; i++) {
+                if (carrito[i].id == id) {
+                    carrito[i].cantidad == Number(carrito[i].cantidad) + Number(cantidad)
+                    // toma del stock la cantidad agregada al carrito.
+                    agregoProductos = true;
+                    //porque contiene cosas
+                    //console.log(agregoProductos)
+                }
+            }
+        } if (agregoProductos === false) {
+        carrito.push(producto);
+          // console.log(producto)
+        }
+        //console.log(producto)
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        //se setea carrito para ser llamado en el otro html con los datos que fueron enviados.
 
+    }))
+}
 
+}
 
 
 // ------------------- CARTA CAROUSEL -------------- //
