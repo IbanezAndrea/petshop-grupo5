@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Nunito', sans-serif;
+}
+
+/* -------- COLORES ----------- */
+
+:root {
+    --main-color: #f2a2b5;
+    --secondary: #94d2bd;
+    --accent: #91DFE3;
+    --light: #cdf5f8c5;
+    --dark: #39576a;
+}
+
+.main {
+    background-color: var(--main-color);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent {
+    background-color: var(--accent);
+}
+
+.light {
+    background-color: var(--light);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+/* -----------   HEADER   ----------- */
+
+/* Navbar */
+header {
+    background-color: #F9F2ED;
+    min-height: 10vh;
+}
+
+#logo {
+    height: 100px;
+}
+
+.shop-img {
+    height: 1.8rem;
+    width: auto;
+}
+
+.shop-img:hover {
+    animation: click 0.5s 1;
+}
+
+@keyframes click {
+
+    25%,
+    75% {
+        transform: scale(0.8)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+}
+
+.shop-btn {
+    border: 1px solid #2f29186a;
+}
+
+nav {
+    background-color: #F9F2ED;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-top: -6rem;
+
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: flex-end;
+        margin: -3rem 0 0 0;
+    }
+
+    .last-link {
+        padding-bottom: 5rem;
+    }
+
+    .navbar-collapse {
+        margin-bottom: -3rem;
+    }
+
+    .shop-btn {
+        position: relative;
+    }
+
+}
+
+/* Fin Navbar */
+.banner-header {
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image:url(https://animalcareinfo.com/wp-content/uploads/2018/04/AdobeStock_129584968.jpeg); */
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 50vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(244, 241, 241);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* -----------  MAIN // CONTAINER  ----------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    background-color: #fff5ee;
+    /* background-image: url(./img/bg.jpg); */
+    background-repeat: no-repeat;
+    gap: 15px;
+}
+
+.fuente {
+    font-family: 'Fredoka One', cursive;
+}
+
+/* -----------  MAIN // ABOUT  ----------- */
+
+.mindy {
+    height: 15rem;
+    margin-left: -2rem;
+    margin-top: -7rem;
+    transform: rotate(-18deg);
+}
+
+.text-mindy {
+    padding-right: 4rem;
+}
+
+.paw {
+    margin-left: 6rem;
+    transform: rotate(40deg);
+
+}
+
+.aboutImage {
+    border-radius: 30% 10% 50% 30%;
+    background-color: var(--main-color);
+    width: 28rem;
+    height: 18rem;
+
+}
+
+.aboutText {
+    border-radius: 20% 30% 10% 30%;
+    background-color: var(--secondary);
+    width: 32rem;
+    height: 20rem;
+}
+
+
+
+
+/* -----------  MAIN // CARD CALL TO ACTION CAROUSEL  ----------- */
+
+
+
+
+
+/* --------------- CAROUSEL -------------- */
+.container-stock-sale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-stock-sale {
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-stock-sale h4 {
+    font-family: "Fredoka One";
+    font-size: 2rem;
+}
+
+.carousel-stock {
+    max-width: 290px;
+}
+
+
+
+
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-carousel {
+    backdrop-filter: blur(2rem);
+    background-color: #00000117;
+    border-radius: 40px;
+    height: 30rem;
+    width: 18rem;
+    overflow: hidden;
+}
+
+.cardCarousel-style {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
+}
+
+
+@media screen and (max-width: 567px) {
+    .product-carousel:not(:first-child) {
+        display: none;
+    }
+}
+
+
+/* ------------- FIN CAROUSEL ------------ */
+
+/* ----------- ABOUT ------------ */
+.bienvenida {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#mindy-bienvenida {
+    height: 290px;
+}
+
+.hi-mindy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    width: 290px;
+    background-color: #f2a2b5;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 45%;
+    padding: 25px;
+}
+
+.card-saludo h3 {
+    text-align: center;
+    font-family: "Fredoka One";
+}
+
+.card-saludo p {
+    text-align: center;
+}
+
+.card-saludo1,
+.card-saludo2,
+.card-saludo3,
+.card-saludo4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    width: 290px;
+    background-color: #f2a2b5;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 45%;
+    padding: 25px;
+}
+
+.card-saludo1 {
+    background-image: url(/assets/img/perrito1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 55%;
+    border-top-right-radius: 35%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 45%;
+}
+
+.card-saludo2 {
+    background-image: url(/assets/img/perrito2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 45%;
+}
+
+.card-saludo3 {
+    background-image: url(/assets/img/perrito3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 55%;
+    border-top-right-radius: 65%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 45%;
+}
+
+.card-saludo4 {
+    background-image: url(/assets/img/perrito4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 55%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 65%;
+}
+
+
+.comunidad h3 {
+    text-align: center;
+    font-family: 'Fredoka One';
+}
+
+.comunidad-texto {
+    display: flex;
+    justify-content: center;
+}
+
+.comunidad p {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hearth-icon {
+    padding: 20px;
+    border-radius: 10%;
+    background-color: var(--dark);
+    color: var(--main-color);
+}
+
+.hearth-icon:hover {
+    color: var(--secondary);
+}
+
+
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-style {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f08e, #cacaca);
+    box-shadow: 12px 12px 24px #afafaf, -12px -12px 24px #ffffff8a;
+}
+
+
+/* .product {
+    backdrop-filter: blur(2rem);
+    background-color: #00000117;
+    border-radius: 40px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    height: 550px;
+    width: 290px;
+    overflow: hidden;
+} */
+
+.product-image {
+    background-color: white;
+    height: 60%;
+}
+
+.product-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.product-specification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+    height: 40%;
+    gap: 15px;
+}
+
+.product-specification h4 {
+    text-align: center;
+    font-weight: 700;
+    margin: -.5rem 0 -.5rem 0;
+}
+
+.buy-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    margin: -2rem 0 -2rem 0;
+}
+
+.price-tag span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.size-price {
+    color: black;
+    font-size: 25px;
+    margin: 0 !important;
+    margin-bottom: -1rem;
+}
+
+.buy a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cardButton {
+    background: linear-gradient(45deg, transparent 5%, #fff 0);
+    border: 0;
+    box-shadow: 5px 0 0 var(--main-color);
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+    width: 40%;
+}
+
+.cardButton:hover {
+    background-color: var(--main-color);
+    background: linear-gradient(45deg, transparent 5%, var(--main-color) 0);
+    box-shadow: 5px 0 0 #fff;
+    font-weight: 700;
+    color: white;
+}
+
+/* ---------- PRODUCTOS ---------- */
+
+.search-input {
+    border-radius: 7px;
+    border: none;
+    height: 3rem;
+    width: 18rem;
+}
+
+.search-input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+
+/* -----------  FOOTER ----------- */
+
+footer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mediosDePago-img img,
+.mediosDeEnvio-img img {
+    height: 30px;
+}
+
+
+.methods-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    background-color: #91DFE3;
+}
+
+.medios {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px
+}
+
+.contacto-about {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacto-about a {
+    color: black;
+}
+
+.contacto-about a:hover {
+    color: var(--main-color);
+    font-style: italic;
+}
+
+.copy {
+    height: 20%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer {
+    height: 10vh;
+    max-width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-footer {
+    height: 6vh;
+}
+
+.logo-footer img {
+    height: 100%;
+}
+
+.social {
+    display: flex;
+    max-width: 100%;
+
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* ------- whatsapp ------ */
+.whatsapp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 2.5rem;
+    right: 15px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
+.span-color {
+    background-color: #f2a2b5;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.span-color-v {
+    background-color: #94d2bd;
+    font-weight: 700;
+
+}
+.product h4 {
+    font-size: 18px ;
+    min-height: 60px;
+}
+
+.shop-card{
+    min-height: 600px;
+}
